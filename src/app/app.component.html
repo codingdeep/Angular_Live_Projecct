@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hovered table-striped">
+          <thead>
+          <tr>
+            <th *ngFor="let col of columns">
+              {{col}}
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let user of users">
+            <td *ngFor="let cols of index">
+              {{user[cols]}}
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
